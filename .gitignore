@@ -3,6 +3,9 @@
 .DS_Store
 Thumbs.db
 
+# Backend Google Apps Script — roda no Google, não é servido pelo site
+Code.gs
+
 # Assets fonte não usados no site (mantidos localmente)
 assets/Capa-LinkedIn.png
 assets/assinatura-equipe.jpg
