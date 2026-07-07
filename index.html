@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesquisa interna · Cordel 2.0</title>
+  <meta name="description" content="Pesquisa interna para avaliar a comunicação da proposta de valor do Cordel 2.0 — Inova Simples." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress" role="progressbar" aria-label="Progresso da pesquisa"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+
+  <header class="page-header">
+    <div class="brand">
+      <span class="brand-mark">Cordel 2.0</span>
+      <span class="brand-tag">Inova Simples · pesquisa de valor</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <img class="hero-logo" src="assets/logo-cordel2.png" alt="Cordel 2.0 · Inova Simples" />
+      <p class="eyebrow">Pesquisa interna · comunicação</p>
+      <h1 class="hero-title">O que é que o <em>Cordel 2.0</em> comunica pra você?</h1>
+      <p class="hero-lead">
+        Esta é uma pesquisa <strong>interna</strong> para avaliar como estamos comunicando a
+        proposta de valor do Cordel 2.0. É rápida: um <strong>vídeo de 1 minuto</strong> e
+        <strong>duas perguntas de seleção múltipla</strong>. Leva cerca de 3 minutos.
+      </p>
+    </section>
+
+    <form id="survey" class="survey" novalidate>
+      <!-- ============ PARTE 1 · Identificação ============ -->
+      <fieldset class="part" data-part="1">
+        <legend>
+          <span class="part-num">01</span>
+          <span class="part-title">Quem está respondendo</span>
+        </legend>
+
+        <div class="grid-2">
+          <label class="field">
+            <span class="label">Nome</span>
+            <input type="text" name="nome" required autocomplete="name" placeholder="Como devemos te chamar" />
+          </label>
+
+          <label class="field">
+            <span class="label">Instituição</span>
+            <input type="text" name="instituicao" required autocomplete="organization" placeholder="Escola, secretaria, coletivo…" />
+          </label>
+
+          <label class="field">
+            <span class="label">Cidade / UF</span>
+            <input type="text" name="cidade_uf" required placeholder="Ex.: Salvador / BA" />
+          </label>
+
+          <label class="field">
+            <span class="label">E-mail</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="voce@exemplo.com" />
+          </label>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="consentimento" required />
+          <span>
+            Declaro conformidade com a <strong>LGPD</strong> (Lei 13.709/2018): minhas informações
+            pessoais e de pertença institucional <strong>não serão divulgadas</strong> — apenas
+            resultados gerais e agregados. Autorizo o uso das respostas para aprimorar a
+            comunicação do Cordel 2.0.
+          </span>
+        </label>
+      </fieldset>
+
+      <!-- ============ PARTE 2 · Vídeo ============ -->
+      <fieldset class="part" data-part="2">
+        <legend>
+          <span class="part-num">02</span>
+          <span class="part-title">Assista antes de responder</span>
+        </legend>
+        <p class="hint">Um folheto em vídeo. Cerca de 1 minuto.</p>
+
+        <div class="video-frame">
+          <iframe
+            id="cordel-video"
+            src="https://www.youtube-nocookie.com/embed/VIDEO_ID_AQUI"
+            title="Cordel 2.0 — apresentação"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </fieldset>
+
+      <!-- ============ PARTE 3 · Proposta de valor (única) ============ -->
+      <fieldset class="part" data-part="3">
+        <legend>
+          <span class="part-num">03</span>
+          <span class="part-title">Qual proposta de valor você mais reconhece no Cordel 2.0?</span>
+        </legend>
+        <p class="hint">Escolha uma.</p>
+
+        <div class="radio-list" role="radiogroup" aria-required="true">
+          <label class="radio">
+            <input type="radio" name="valor" value="a. Ensinar a usar chatbot de IA" required />
+            <span class="marker">a</span>
+            <span class="text">Ensinar a usar chatbot de IA.</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="valor" value="b. Incluir a formação cultural no mundo digital" />
+            <span class="marker">b</span>
+            <span class="text">Incluir a formação cultural no mundo digital.</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="valor" value="c. Incluir letramento digital no Projeto de Vida" />
+            <span class="marker">c</span>
+            <span class="text">Incluir letramento digital no Projeto de Vida.</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="valor" value="d. Exercício da criatividade pela escrita poética" />
+            <span class="marker">d</span>
+            <span class="text">Exercício da criatividade por meio da escrita poética.</span>
+          </label>
+          <label class="radio radio-other">
+            <input type="radio" name="valor" value="e. Outro" id="valor-outro" />
+            <span class="marker">e</span>
+            <span class="text">Outro:</span>
+            <input
+              type="text"
+              name="valor_outro"
+              id="valor-outro-texto"
+              placeholder="Descreva em uma frase"
+              disabled
+              aria-label="Descreva a outra proposta de valor"
+            />
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- ============ PARTE 4 · Problemáticas (múltipla) ============ -->
+      <fieldset class="part" data-part="4">
+        <legend>
+          <span class="part-num">04</span>
+          <span class="part-title">Quais problemas o Cordel 2.0 lhe parece atender?</span>
+        </legend>
+        <p class="hint">Marque quantas quiser.</p>
+
+        <div id="problemas" class="problem-groups">
+          <!-- Grupos e itens injetados por app.js -->
+        </div>
+      </fieldset>
+
+      <!-- ============ Envio ============ -->
+      <div class="submit-row">
+        <button type="submit" class="btn-submit" id="btn-submit">Enviar respostas</button>
+        <p class="privacy-note">Suas respostas ficam num banco privado do Cordel 2.0. Sem venda de dados.</p>
+      </div>
+
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <!-- ============ Agradecimento (exibido após envio) ============ -->
+    <section id="obrigado" class="thanks" hidden>
+      <img class="thanks-logo" src="assets/logo-cordel2.png" alt="Cordel 2.0 · Inova Simples" />
+      <h2 class="thanks-title">Muito obrigado! 🌵</h2>
+      <p class="thanks-lead">
+        Sua percepção acabou de virar combustível pra afinar a forma como o Cordel 2.0 se
+        comunica. De coração: valeu por emprestar seus minutos e sua leitura.
+      </p>
+      <p class="thanks-sign">— Equipe Cordel 2.0 · Inova Simples</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>
+      <strong>Cordel 2.0 — Inova Simples</strong> · CNPJ 66.466.887/0001-16 · Salvador/BA<br />
+      Dúvidas: <a href="mailto:contato@cordel2pontozero.com">contato@cordel2pontozero.com</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

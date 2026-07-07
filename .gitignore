@@ -1,0 +1,10 @@
+# Ferramentas locais / não pertencem ao site publicado
+.claude/
+.DS_Store
+Thumbs.db
+
+# Assets fonte não usados no site (mantidos localmente)
+assets/Capa-LinkedIn.png
+assets/assinatura-equipe.jpg
+assets/faviconESCURI.png
+assets/LOGOMARCA-CORDEL 2.0 Inova Simples.png
