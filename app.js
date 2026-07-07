@@ -7,7 +7,7 @@
    ========================================================= */
 
 // >>> AJUSTE AQUI depois de publicar o Web App do Apps Script <<<
-const ENDPOINT = 'https://script.google.com/macros/s/COLE_SEU_ID_AQUI/exec';
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyOK3LBs_IlU3R5Lqrtf03yNorSf-v0_PhYWWVivixML5y8af4p8z0uiIZJ1-mPSbyN/exec';
 
 // -----------------------------------------------------------
 // Lista das 30 problemáticas (espelha o pitch 30-dores)
