@@ -46,7 +46,7 @@ const GRUPOS = [
     titulo: 'Política pública — Educação',
     itens: [
       'Abismo entre as diretrizes (MEC, UNESCO) e a ação concreta na ponta.',
-      'Desigualdade digital: a IA amplia a distância entre redes ricas e pobres.',
+      'Desigualdade digital: a IA amplia a distância entre classes e grupos sociais.',
       'Falta de soluções LGPD-compliant desenhadas para menores.'
     ]
   },
