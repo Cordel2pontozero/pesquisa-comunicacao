@@ -266,6 +266,31 @@ select:focus {
   border: 0;
 }
 
+/* Reel vertical do Instagram (9:16 + chrome do embed) */
+.video-frame--reel {
+  aspect-ratio: auto;
+  height: 720px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: var(--papel-claro);
+}
+@media (max-width: 440px) {
+  .video-frame--reel { height: 680px; }
+}
+
+.video-fallback {
+  text-align: center;
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+.video-fallback a {
+  color: var(--cobalto);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.video-fallback a:hover { border-bottom-color: var(--cobalto); }
+
 /* ---------- Radios (proposta de valor) ---------- */
 .radio-list {
   display: flex;
