@@ -344,65 +344,6 @@ select:focus {
   color: #999;
 }
 
-/* ---------- Grupos de problemas ---------- */
-.problem-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.group {
-  border-top: 1px solid var(--linha);
-  padding-top: 14px;
-}
-.group:first-child { border-top: none; padding-top: 0; }
-
-.group h3 {
-  font-family: var(--sans);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--cobalto);
-  margin: 0 0 10px;
-  font-weight: 600;
-}
-
-.problem-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.problem {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  padding: 10px 12px;
-  border-radius: var(--raio);
-  cursor: pointer;
-  transition: background 120ms ease;
-  font-size: 14.5px;
-  line-height: 1.4;
-}
-.problem:hover { background: #fbf1d8; }
-.problem input[type="checkbox"] {
-  accent-color: var(--escarlate);
-  width: 17px;
-  height: 17px;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-.problem:has(input:checked) {
-  background: #fdeee2;
-}
-.problem .num {
-  font-family: var(--serif);
-  font-weight: 800;
-  font-size: 13px;
-  color: var(--cobalto);
-  min-width: 20px;
-}
-
 /* ---------- Submit ---------- */
 .submit-row {
   display: flex;
